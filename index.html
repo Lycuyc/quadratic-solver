@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Решатель квадратных уравнений</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
     <link rel="icon" type="image/x-icon" href="result_image.png"> 
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,35 +17,57 @@
             padding: 20px; 
             font-size: 16px; 
             line-height: 1.5;
+            text-align: center;
         }
 
-        label, h6 {
+        div {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            max-width: 350px; 
+            margin: 0 auto 10px auto; 
+        }
+
+        label, h3 {
             font-weight: 500; 
             color: rgba(0, 0, 0, 0.7); 
+        }
+
+        h3 {
+             display: block;
+             text-align: center;
         }
 
         input { 
             margin: 5px; 
             padding: 8px; 
-            width: 100px; 
+            width: 50%; 
+            max-width: 150px; 
             border: 1px solid #ccc; 
             border-radius: 4px;
         }
 
-        h1 { 
+        h1, h2 { 
             font-size: 24px; 
             font-weight: 900; 
+            text-align: center;
         }
         
+        .centered-container {
+             max-width: 350px;
+             margin: 0 auto;
+        }
+
         #output { 
             margin-top: 20px; 
             font-weight: 500;
-            color: rgba(0, 0, 0, 0.7);
+            color: rgba(0, 0, 0, 0.7); 
             padding: 10px; 
             border: 1px solid #ccc; 
             white-space: pre-wrap; 
             background-color: #f9f9f9; 
             border-radius: 4px;
+            text-align: left;
         }
 
         .overlay-button {
@@ -73,8 +98,10 @@
     </style>
 </head>
 <body>
-
-    <h1>Решатель квадратных уравнений Хазар и Расул лох</h1>
+    
+    <div class="centered-container">
+        <h1>Решатель квадратных уравнений Хазар и Расул лох</h1>
+    </div>
 
     <div>
         <label for="a">Коэффициент a:</label>
@@ -93,17 +120,21 @@
 
     <br>
     
-    <div 
-        class="overlay-button" 
-        id="accept-button" 
-        onclick="solveQuadratic()">
-        
-        Решить уравнение
-        
+    <div class="centered-container">
+        <div 
+            class="overlay-button" 
+            id="accept-button" 
+            onclick="solveQuadratic()">
+            
+            Решить уравнение
+            
+        </div>
     </div>
 
-    <h2>Результат:</h2>
-    <div id="output">Здесь появятся корни уравнения.</div>
+    <div class="centered-container">
+        <h2>Результат:</h2>
+        <div id="output">Здесь появятся корни уравнения.</div>
+    </div>
     
     <h3>Эснад тоже лох</h3>
     <h3>Гусейн лох</h3>
