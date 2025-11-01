@@ -21,7 +21,7 @@ function solveQuadratic() {
     if (D >= 0) {
         
         if (D > 0) {
-            result += "Output \"est 2 kornya\"\n";
+            result += "аутпут \"est 2 kornya\"\n";
             
             let sqrtD = Math.sqrt(D);
             let x = (-b + sqrtD) / (2 * a);
@@ -31,7 +31,7 @@ function solveQuadratic() {
             result += `Output x1 = ${x1.toFixed(4)}`;
             
         } else {
-            result += "Output \"edinstvenniy koren\"\n";
+            result += "аутпут \"edinstvenniy koren\"\n";
             
             let x = (-b) / (2 * a);
             
@@ -39,7 +39,7 @@ function solveQuadratic() {
         }
         
     } else {
-        result = "Output \"net korney\" (Нет действительных корней)";
+        result = "аутпут \"net korney\" (Нет действительных корней)";
     }
     
     outputElement.innerText = result;
