@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Решатель квадратных уравнений</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { margin: 5px; padding: 8px; width: 100px; }
+        button { padding: 10px 20px; cursor: pointer; }
+        #output { margin-top: 20px; font-weight: bold; padding: 10px; border: 1px solid #ccc; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+
+    <h1>Решатель квадратных уравнений $ax^2 + bx + c = 0$</h1>
+
+    <div>
+        <label for="a">Коэффициент a:</label>
+        <input type="number" id="a" value="1">
+    </div>
+
+    <div>
+        <label for="b">Коэффициент b:</label>
+        <input type="number" id="b" value="-5">
+    </div>
+
+    <div>
+        <label for="c">Коэффициент c:</label>
+        <input type="number" id="c" value="6">
+    </div>
+
+    <br>
+    <button onclick="solveQuadratic()">Решить уравнение</button>
+
+    <h2>Результат:</h2>
+    <div id="output">Здесь появятся корни уравнения.</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
