@@ -27,15 +27,15 @@ function solveQuadratic() {
             let x = (-b + sqrtD) / (2 * a);
             let x1 = (-b - sqrtD) / (2 * a);
             
-            result += `Output x = ${x.toFixed(4)}\n`;
-            result += `Output x1 = ${x1.toFixed(4)}`;
+            result += `аутпут x = ${x.toFixed(4)}\n`;
+            result += `аутпут x1 = ${x1.toFixed(4)}`;
             
         } else {
             result += "аутпут \"edinstvenniy koren\"\n";
             
             let x = (-b) / (2 * a);
             
-            result += `Output x = ${x.toFixed(4)}`;
+            result += `аутпут x = ${x.toFixed(4)}`;
         }
         
     } else {
