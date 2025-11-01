@@ -4,11 +4,67 @@
     <meta charset="UTF-8">
     <title>Решатель квадратных уравнений</title>
     <link rel="icon" type="image/x-icon" href="result_image.png"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        input { margin: 5px; padding: 8px; width: 100px; }
-        button { padding: 10px 20px; cursor: pointer; }
-        #output { margin-top: 20px; font-weight: bold; padding: 10px; border: 1px solid #ccc; white-space: pre-wrap; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            padding: 20px; 
+        }
+        input { 
+            margin: 5px; 
+            padding: 8px; 
+            width: 100px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+        }
+        h1 { 
+            font-size: 24px; 
+            font-weight: 900; 
+        }
+        
+        #output { 
+            margin-top: 20px; 
+            font-weight: bold; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            white-space: pre-wrap; 
+            background-color: #f9f9f9; 
+            border-radius: 4px;
+        }
+
+        
+        *, *::before, *::after { 
+            box-sizing: border-box; 
+        }
+
+        .overlay-button {
+            display: inline-flex;
+            align-items: center;
+            height: 40px;
+            padding-right: 24px;
+            padding-left: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 4px;
+            margin: 4px 0;
+            cursor: pointer;
+            transition: background-color 0.2s, opacity 0.2s; 
+            user-select: none;
+        }
+        
+        #accept-button {
+            background-color: rgb(132, 94, 194); 
+            color: white;
+        }
+        
+        #accept-button:hover {
+            opacity: 0.9;
+        }
+        
     </style>
 </head>
 <body>
@@ -31,12 +87,22 @@
     </div>
 
     <br>
-    <button onclick="solveQuadratic()">Решить уравнение</button>
+    
+    <div 
+        class="overlay-button" 
+        id="accept-button" 
+        onclick="solveQuadratic()">
+        
+        Решить уравнение
+        
+    </div>
 
     <h2>Результат:</h2>
     <div id="output">Здесь появятся корни уравнения.</div>
+    
     <h6>Эснад тоже лох</h6>
     <h6>Гусейн лох</h6>
+    
     <script src="script.js"></script>
 
 </body>
