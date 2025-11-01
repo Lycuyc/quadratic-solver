@@ -5,12 +5,12 @@ function solveQuadratic() {
     let outputElement = document.getElementById('output');
     
     if (isNaN(a) || isNaN(b) || isNaN(c)) {
-        outputElement.innerHTML = "Ошибка: Введите числовые значения для a, b и c.";
+        outputElement.innerText = "Ошибка: Введите числовые значения для a, b и c.";
         return;
     }
 
     if (a === 0) {
-        outputElement.innerHTML = "Ошибка: Коэффициент 'a' не может быть равен нулю для квадратного уравнения.";
+        outputElement.innerText = "Ошибка: Коэффициент 'a' не может быть равен нулю для квадратного уравнения.";
         return;
     }
 
@@ -30,7 +30,7 @@ function solveQuadratic() {
             result += `аутпут x = ${x.toFixed(4)}\n`;
             result += `аутпут x1 = ${x1.toFixed(4)}`;
             
-        } else {
+        } else { 
             result += "аутпут \"edinstvenniy koren\"\n";
             
             let x = (-b) / (2 * a);
