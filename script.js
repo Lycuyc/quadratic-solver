@@ -30,7 +30,7 @@ function solveQuadratic() {
             result += `аутпут x = ${x.toFixed(4)}\n`;
             result += `аутпут x1 = ${x1.toFixed(4)}`;
             
-        } else { 
+        } else {
             result += "аутпут \"edinstvenniy koren\"\n";
             
             let x = (-b) / (2 * a);
